@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace ProgrammersBlog.Entities.Concrete
 {
-    class Article : EntityBase, IEntity
+    public class Article : EntityBase, IEntity
     {
-
         public string Title { get; set; }
         public string Content { get; set; }
         public string Thumbnail { get; set; }
@@ -23,13 +22,15 @@ namespace ProgrammersBlog.Entities.Concrete
         public string SeoDescription { get; set; }
         public string SeoTags { get; set; }
 
-        public int CategoryId { get; set; }
+        public int CategoryId { get; set; }//for a article category
 
-        public Category Category { get; set; }
+        public Category Category { get; set; }//this is for the other category properties
 
         public int UserId { get; set; }
 
         public User User { get; set; }
+
+        public ICollection<Comment> Comments { get; set; }
 
     }
 }
