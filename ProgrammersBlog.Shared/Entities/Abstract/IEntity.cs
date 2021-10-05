@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProgrammersBlog.Shared.Entities.Abstract
 {
-    interface IEntity// it is a signature for repository pattern
+   public interface IEntity// it is a signature for repository pattern
     {
     }
 }
