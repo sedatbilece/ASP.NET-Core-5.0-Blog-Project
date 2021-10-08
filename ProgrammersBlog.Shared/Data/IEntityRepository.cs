@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammersBlog.Shared.Data
+namespace ProgrammersBlog.Shared.Data// !! dependecies need ef core  (nuget manager) 
 {
    public  interface IEntityRepository <T> where  T:class,IEntity,new()
         // T is sub repos type like that "user" ,"comment " ,"category"
