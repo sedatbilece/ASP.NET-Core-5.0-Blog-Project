@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProgrammersBlog.Shared.Data// !! dependecies need ef core  (nuget manager) 
 {
-   public  interface IEntityRepository <T> where  T:class,IEntity,new()
+   public  interface IEntityRepository <T> where  T:class,IEntity,new()//this is for the entities interface implementation
         // T is sub repos type like that "user" ,"comment " ,"category"
     {
         // get the object 
