@@ -8,13 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammersBlog.Data.Concrete
+namespace ProgrammersBlog.Data.Concrete.EntityFramework.Repositories
 {
-    class CommentRepository :EfEntityRepositoryBase<Comment> , ICommentRepository
+    public class EfCategoryRepository : EfEntityRepositoryBase<Category> ,ICategoryRepository
     {
 
-        public CommentRepository(DbContext context) : base(context)
-        {
+        public EfCategoryRepository(DbContext context) : base(context)
+        {//cons is for getting the ef base all method in here
 
         }
     }

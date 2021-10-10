@@ -8,11 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammersBlog.Data.Concrete
+namespace ProgrammersBlog.Data.Concrete.EntityFramework.Repositories
 {
-    public class ArticleRepository : EfEntityRepositoryBase<Article>, IArticleRepository
+    public class EfArticleRepository : EfEntityRepositoryBase<Article>, IArticleRepository
     {
-        public ArticleRepository(DbContext context) : base(context)
+        public EfArticleRepository(DbContext context) : base(context)
         {//cons is for getting the ef base all method in here
 
         }

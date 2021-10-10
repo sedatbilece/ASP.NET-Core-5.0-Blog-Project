@@ -8,12 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammersBlog.Data.Concrete
+namespace ProgrammersBlog.Data.Concrete.EntityFramework.Repositories
 {
-    class UserRepository :EfEntityRepositoryBase<User> ,IUserRepository
+    public class EfCommentRepository :EfEntityRepositoryBase<Comment> , ICommentRepository
     {
 
-        public UserRepository(DbContext context) : base(context)
+        public EfCommentRepository(DbContext context) : base(context)
         {
 
         }
