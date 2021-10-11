@@ -1,0 +1,2 @@
+﻿this folder is for the data mapping
+we used fluent api for this because data annotations could be weak for high level project
