@@ -21,7 +21,26 @@ namespace ProgrammersBlog.Data.Concrete.EntityFramework.Mappings
             builder.Property(c => c.Text).IsRequired();
             builder.Property(c => c.Text).HasMaxLength(2000);
 
+            builder.HasOne<Article>(c => c.Article).WithMany(a => a.Comments).HasForeignKey(c => c.ArticleId);
 
+            //same as all
+            builder.Property(c => c.CreatedByName).IsRequired();
+
+            builder.Property(c => c.CreatedByName).HasMaxLength(50);
+
+            builder.Property(c => c.ModifiedByName).IsRequired();
+
+            builder.Property(c => c.ModifiedByName).HasMaxLength(50);
+
+            builder.Property(c => c.CreatedDate).IsRequired();
+
+            builder.Property(c => c.ModifiedDate).IsRequired();
+
+            builder.Property(c => c.IsActive).IsRequired();
+
+            builder.Property(c => c.IsDeleted).IsRequired();
+
+            builder.Property(c => c.Note).HasMaxLength(500);
 
 
         }
