@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProgrammersBlog.Data.Concrete.EntityFramework.Mappings
 {
-    public class RoleMapping : IEntityTypeConfiguration<Role>
+    public class RoleMap : IEntityTypeConfiguration<Role>
     {
         public void Configure(EntityTypeBuilder<Role> builder)
         {
