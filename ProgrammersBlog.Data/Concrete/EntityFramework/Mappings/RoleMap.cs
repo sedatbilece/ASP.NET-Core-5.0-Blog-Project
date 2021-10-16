@@ -43,6 +43,20 @@ namespace ProgrammersBlog.Data.Concrete.EntityFramework.Mappings
 
             builder.Property(r=> r.Note).HasMaxLength(500);
 
+            // adding seed
+            builder.HasData(new Role { // data exist control
+                Id=1,
+                Name="Admin",
+                Description="Admin has all rights .",
+                IsActive=true,
+                IsDeleted=false,
+                CreatedByName="InitialCreate",
+                CreatedDate=DateTime.Now,
+                ModifiedByName="InitialCreate",
+                ModifiedDate=DateTime.Now,
+                Note="Role of Admin"
+            });
+
         }
     }
 }
