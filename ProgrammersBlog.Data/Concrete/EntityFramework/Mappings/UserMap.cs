@@ -81,8 +81,8 @@ namespace ProgrammersBlog.Data.Concrete.EntityFramework.Mappings
             ModifiedByName = "InitialCreate",
             ModifiedDate = DateTime.Now,
             Note = "user of Admin",
-            PasswordHash= Encoding.ASCII.GetBytes("e10adc3949ba59abbe56e057f20f883e")//123456
-
+            PasswordHash= Encoding.ASCII.GetBytes("e10adc3949ba59abbe56e057f20f883e") , //123456
+            Picture="default.png"
 
             });
         }

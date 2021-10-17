@@ -42,6 +42,52 @@ namespace ProgrammersBlog.Data.Concrete.EntityFramework.Mappings
 
             builder.Property(c => c.Note).HasMaxLength(500);
 
+            builder.HasData(
+                new Comment
+                {
+                    Id=1,
+                    ArticleId=1,
+                    Text= "Lorem Ipsum pasajlarının birçok çeşitlemesi vardır. Ancak bunların büyük bir çoğunluğu mizah katılarak veya rastgele sözcükler eklenerek değiştirilmişlerdir.",
+                    IsActive = true,
+                    IsDeleted = false,
+                    CreatedByName = "InitialCreate",
+                    CreatedDate = DateTime.Now,
+                    ModifiedByName = "InitialCreate",
+                    ModifiedDate = DateTime.Now,
+                    Note = "yorum denemesi1 article 1 c#"
+
+                },
+                new Comment
+                {
+                    Id = 2,
+                    ArticleId = 2,
+                    Text = "Lorem Ipsum pasajlarının birçok çeşitlemesi vardır. Ancak bunların büyük bir çoğunluğu mizah katılarak veya rastgele sözcükler eklenerek değiştirilmişlerdir.",
+                    IsActive = true,
+                    IsDeleted = false,
+                    CreatedByName = "InitialCreate",
+                    CreatedDate = DateTime.Now,
+                    ModifiedByName = "InitialCreate",
+                    ModifiedDate = DateTime.Now,
+                    Note = "yorum denemesi2 article 2 py"
+
+                },
+                 new Comment
+                 {
+                     Id = 3,
+                     ArticleId = 3,
+                     Text = "Lorem Ipsum pasajlarının birçok çeşitlemesi vardır. Ancak bunların büyük bir çoğunluğu mizah katılarak veya rastgele sözcükler eklenerek değiştirilmişlerdir.",
+                     IsActive = true,
+                     IsDeleted = false,
+                     CreatedByName = "InitialCreate",
+                     CreatedDate = DateTime.Now,
+                     ModifiedByName = "InitialCreate",
+                     ModifiedDate = DateTime.Now,
+                     Note = "yorum denemesi2 article 2 js"
+
+                 }
+
+                );
+
 
         }
     }
