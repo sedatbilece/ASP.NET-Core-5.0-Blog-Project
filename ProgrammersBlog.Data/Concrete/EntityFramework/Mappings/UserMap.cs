@@ -66,23 +66,24 @@ namespace ProgrammersBlog.Data.Concrete.EntityFramework.Mappings
 
             builder.Property(u=> u.Note).HasMaxLength(500);
 
-            builder.HasData(new User { 
-            
-            Id=1,
-            RoleId=1,
-            Name="Sedat",
-            LastName="Bilece",
-            Username="sedatbilece",
-            Email="sedat@deneme.com",
-            IsActive=true,
-            IsDeleted=false,
-            CreatedByName = "InitialCreate",
-            CreatedDate = DateTime.Now,
-            ModifiedByName = "InitialCreate",
-            ModifiedDate = DateTime.Now,
-            Note = "user of Admin",
-            PasswordHash= Encoding.ASCII.GetBytes("e10adc3949ba59abbe56e057f20f883e") , //123456
-            Picture="default.png"
+            builder.HasData(new User
+            {
+
+                Id = 1,
+                RoleId = 1,
+                Name = "Sedat",
+                LastName = "Bilece",
+                Username = "sedatbilece",
+                Email = "sedat@deneme.com",
+                IsActive = true,
+                IsDeleted = false,
+                CreatedByName = "InitialCreate",
+                CreatedDate = DateTime.Now,
+                ModifiedByName = "InitialCreate",
+                ModifiedDate = DateTime.Now,
+                Note = "user of Admin",
+                PasswordHash = Encoding.ASCII.GetBytes("e10adc3949ba59abbe56e057f20f883e"), //123456
+                Picture = "default.png"
 
             });
         }
