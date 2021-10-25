@@ -15,6 +15,9 @@ namespace ProgrammersBlog.Services.Abstract
 
         Task< IDataResult< IList<Category> > > GetAll();
 
+        Task<IDataResult<IList<Category>>> GetAllByNoneDeleted();
+
+
         Task<IResult> Add(CategoryAddDto categoryAddDto,string createdByName);//dto(data transfer object )
 
         Task<IResult> Update(CategoryAddDto categoryUpdateDto, string modifiedByName);

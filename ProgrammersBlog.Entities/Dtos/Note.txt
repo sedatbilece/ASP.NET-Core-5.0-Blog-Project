@@ -1,0 +1,4 @@
+﻿Dtos is a hidden layer for database and entity 
+
+for example entites has id , name , password ,desc 
+ we want to give name and desc from user in this situation we need a abstract object
